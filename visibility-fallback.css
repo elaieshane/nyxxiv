@@ -25,6 +25,94 @@ footer .overflow-hidden > .whitespace-nowrap[style*="translateX(100%)"] {
   animation: nyxxiv-footer-marquee 20s linear infinite;
 }
 
+main > canvas {
+  position: absolute !important;
+  inset: 0 auto auto 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+#home > div:first-child > div:nth-child(1) {
+  top: -4vh;
+  left: -6vw;
+  width: min(65vw, 820px);
+  height: min(78vh, 600px);
+  background-color: color-mix(in oklab, var(--crimson) 55%, transparent);
+  filter: blur(20px);
+}
+
+#home > div:first-child > div:nth-child(2) {
+  right: -6vw;
+  bottom: 10vh;
+  width: min(52vw, 700px);
+  height: min(84vh, 645px);
+  background-color: color-mix(in oklab, var(--beige) 42%, transparent);
+  filter: blur(24px);
+}
+
+#home > div:first-child > div:nth-child(3) {
+  top: 72%;
+  left: 42%;
+  width: min(38vw, 500px);
+  height: min(60vh, 460px);
+  background-color: color-mix(in oklab, var(--crimson-dark) 58%, transparent);
+  filter: blur(20px);
+}
+
+footer {
+  isolation: isolate;
+  background-image: radial-gradient(
+    ellipse at 46% 100%,
+    color-mix(in oklab, var(--crimson) 32%, transparent),
+    transparent 38%
+  );
+}
+
+footer::before,
+footer::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+  border-radius: 40% 60% 65% 35% / 45% 40% 60% 55%;
+  filter: blur(20px);
+}
+
+footer::before {
+  top: -10%;
+  left: -8%;
+  width: min(62vw, 820px);
+  height: 115%;
+  background-color: color-mix(in oklab, var(--crimson) 55%, transparent);
+}
+
+footer::after {
+  top: -15%;
+  right: -6%;
+  width: min(52vw, 700px);
+  height: 120%;
+  background-color: color-mix(in oklab, var(--beige) 40%, transparent);
+}
+
 #releases .bg-crimson\/5 {
   background-color: color-mix(in oklab, var(--crimson) 20%, transparent);
+}
+
+@media (max-width: 640px) {
+  #home > div:first-child > div:nth-child(1) {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  #home > div:first-child > div:nth-child(2) {
+    width: 82vw;
+    height: 65vh;
+  }
+
+  #home > div:first-child > div:nth-child(3) {
+    top: 75%;
+    left: 38%;
+    width: 72vw;
+    height: 48vh;
+  }
 }
