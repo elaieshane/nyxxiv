@@ -17,3 +17,4 @@ Each track is a journey through liquid soundscapes and crimson-tinted emotions.
 
 ---
 © 2026 NYXXIV. All rights reserved.
+

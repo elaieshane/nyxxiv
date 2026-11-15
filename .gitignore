@@ -4,3 +4,7 @@ desktop.ini
 *.log
 .env.local
 .env.*.local
+nyxxiv-vercel-app/
+fix-structure.js
+verify.js
+
