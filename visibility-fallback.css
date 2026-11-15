@@ -1,5 +1,30 @@
-[style*="opacity: 0"],
-[style*="opacity:0"] {
+main section [style*="opacity: 0"],
+main section [style*="opacity:0"],
+footer [style*="opacity: 0"],
+footer [style*="opacity:0"] {
   opacity: 1 !important;
+}
+
+main section [style*="opacity: 0"][style*="translate"],
+main section [style*="opacity:0"][style*="translate"],
+footer [style*="opacity: 0"][style*="translate"],
+footer [style*="opacity:0"][style*="translate"] {
   transform: none !important;
+}
+
+@keyframes nyxxiv-footer-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+footer .overflow-hidden > .whitespace-nowrap[style*="translateX(100%)"] {
+  animation: nyxxiv-footer-marquee 20s linear infinite;
+}
+
+#releases .bg-crimson\/5 {
+  background-color: color-mix(in oklab, var(--crimson) 20%, transparent);
 }
